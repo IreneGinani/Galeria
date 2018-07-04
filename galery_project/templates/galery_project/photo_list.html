@@ -1,4 +1,9 @@
-<html>
-    <p>Hi there!</p>
-    <p>It works!</p>
-</html>
+<div>
+    <h1><a href="/">Galeria de Fotos</a></h1>
+</div>
+
+{% for photo in photos %}
+    <div>
+        <p>published: {{ photo.name }}</p>
+    </div>
+{% endfor %}
