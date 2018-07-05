@@ -1,0 +1,43 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+<body>
+  <div>
+      <h1><a href="/">Photos Upload</a></h1>
+  </div>
+
+  <form method = "GET" action = "{% url 'galery_project:photo_list' %}">
+    
+    <div class='input-wrapper'>
+        
+        <span name = "file" id='file'></span>
+        <input name = "file-input" id='input-file' type='file' value='' />
+        <label class =" btn-btn defualt" for='input-file'>
+          Search
+        </label>
+
+        <input type = "submit" class="btn btn-default" name = "botao" value ="Send"> 
+
+    </div>
+  </form>
+</body>
+
+<script type="text/javascript">
+  var $input    = document.getElementById('input-file'),
+      $fileName = document.getElementById('file');
+
+      $input.addEventListener('change', function(){
+        url = this.value.split("\\")
+                console.log(url);
+        $fileName.textContent = url[2];
+        $fileName.value = url[2];
+        document.getElementById("file-input").value = url[2];
+
+        console.log(document.getElementById("file").value)
+  });
+</script>

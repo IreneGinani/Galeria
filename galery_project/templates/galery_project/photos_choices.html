@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	{% for photo in photos %}
+		{% if photo.marked() %}
+		    <div>
+		       <img src= {{ photo.name }} /> 
+		    </div>
+		{% endif %}
+	{% endfor %}
+{% endblock %}
