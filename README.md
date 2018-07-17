@@ -32,4 +32,4 @@ http://localhost:8000/
 
 In first window you have to choice a photo, like this:
 
-![Initial](documentation/telainicio-sm)
+![Initial](https://github.com/IreneGinani/Galeria/raw/master/documentation/telainicio-sm)
