@@ -40,5 +40,5 @@ Click on the buttom Search and:
 
 So Send your new Photo. In te next page you can see your new photo like: 
 
-![Search](https://github.com/IreneGinani/Galeria/raw/master/documentation/fotosselecionadasf.png)
+![Choices](https://github.com/IreneGinani/Galeria/raw/master/documentation/fotoselecionadasf.png)
 
