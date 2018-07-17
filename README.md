@@ -1,6 +1,6 @@
-# ZSSN (Zombie Survival Social Network)
+# Gallery Photos
 
-System for help non-infected people to share resources
+System for upload and show photos from aws S3
 
 ## Requirements
 
