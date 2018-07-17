@@ -38,7 +38,11 @@ Click on the buttom Search and:
 
 ![Search](https://github.com/IreneGinani/Galeria/raw/master/documentation/escolha-foto-sf.png)
 
-So Send your new Photo. In te next page you can see your new photo like: 
+So Send your new Photo. In te next page you can see your new photo: 
+
+![All](https://github.com/IreneGinani/Galeria/raw/master/documentation/fotosselecionadas.png)
+
+So choice your photo click on it and it stay like: 
 
 ![Choices](https://github.com/IreneGinani/Galeria/raw/master/documentation/fotoselecionadasf.png)
 
