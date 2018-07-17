@@ -208,8 +208,6 @@ figure.effect-sarah {
 
 }
 
-
-
 figure.effect-sarah img {
 
 	max-width: none;
@@ -234,15 +232,16 @@ figure.effect-sarah img {
 
 
 
-figure.effect-sarah:hover img {
+figure:focus ,  figure:active {
 
 	opacity: 0.4;
 
-	-webkit-transform: translate3d(0,0,0);
-
-	transform: translate3d(0,0,0);
 
 }
+
+
+
+
 
 
 

@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6{ color:#343434}
 
 ::selection {background: #222222;color:#ffF;text-shadow: none;}
 
-a,input,textarea,button,body,img{padding-left: 10px; transition-delay: 0s;transition-duration: 0.6s;transition-property: all;transition-timing-function: ease;}
+a,input,textarea,button,body,img{transition-delay: 0s;transition-duration: 0.6s;transition-property: all;transition-timing-function: ease;}
 
 a {text-decoration: none;outline: none;color: #222222;}
 

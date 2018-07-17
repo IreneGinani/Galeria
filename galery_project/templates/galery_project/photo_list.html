@@ -64,23 +64,7 @@
       
       <!-- nav -->
       
-     <nav>
-        <div class="menu-expanded">
-          <div class="nav-icon">
-            <div id="menu" class="menu"></div>
-            <p>menu</p>
-          </div>
-          <div class="cross"> <span class="linee linea1"></span> <span class="linee linea2"></span> <span class="linee linea3"></span> </div>
-          <div class="main-menu">
-            <ul>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="blog.html">blog</a></li>
-              <li><a href="contact.html">contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    
       
       <!-- nav --> 
       
@@ -99,18 +83,30 @@
       <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 masonry">
         {% for photo in photos %}
 	       <li class="masonry-item grid">
-	          <figure  class="effect-sarah"> <img src= {{ photo.name }} alt="" />
+	          <figure  id = {{photo.id}} onclick="selectedPhotos( '{{ photo.id }}','{{photo.name}}' )" class="effect-sarah"> <img  src = {{ photo.name }} alt="" />
 	            <figcaption>
 	              <h2 >Select </h2>
 	            </figcaption>
 	          </figure>
 	        </li>
-	    {% endfor %}
+        {% endfor %}
       </ul>
+      <div>
+      </br>
+      
+          <form action = "{% url 'galery_project:save_photos' %}"  method="GET" >
+              {% for photo in photos %}
+                <input type = hidden = "true" class = "form-control" name = {{photo.name}} id = {{photo.name}} value = "">
+                {% endfor %}
+              <input type="submit" class="btn" value="Save Photos" />
+          </form>
+      </div>
+    </br>
     </div>
-
   </div>
 </main>
+
+
 
 <!-- Image Gallery --> 
 
@@ -188,8 +184,28 @@
 <script src="js/gallery/jquery.infinitescroll.min.js" type="text/javascript"></script> 
 <script src="js/gallery/main.js" type="text/javascript"></script> 
 <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+<script>
+  
+
+    function selectedPhotos(id,name){
+
+      if (document.getElementById(id).style.opacity < 1){
+        document.getElementById(id).style.opacity = 1
+        document.getElementById(name).value = "false"
+        console.log(document.getElementById(id).value)
+  
+      }else{
+        document.getElementById(id).style.opacity = 0.4;
+        document.getElementById(name).value = "true"
+        console.log(document.getElementById(name).value)
+      }
+    }
+  
+  </script>
 </body>
 
 
 
 </html>
+
+
