@@ -10,6 +10,14 @@ BUCKET_NAME = 'galeria-fotos'
 
 def photo_list(request):
 
+    Photo.objects.all().delete()
+
+    listObjSummary = s3.Bucket(BUCKET_NAME).objects.all()
+
+    for objSum in listObjSummary:
+        name = "https://s3-sa-east-1.amazonaws.com/" + BUCKET_NAME + objSum.key
+        photo = Photo(name=name)
+        photo.save()
 
     file_name = 'images-to-upload/' + request.GET['file-input']
     data = open(file_name, 'rb')
@@ -32,7 +40,6 @@ def photo_list(request):
 
 
     photos = Photo.objects.all()
-    print(photos)
     return render(request, 'galery_project/photo_list.html', {'photos': photos})
 
 def photo_upload(request):
@@ -43,17 +50,12 @@ def save_photos(request):
 
     photos_old = Photo.objects.all()
     for photo in photos_old:
-        print(request.GET[photo.name])
         if request.GET[photo.name] == "true":
-            print("iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiu")
-            Photo.objects.filter(name=photo.name,is_marked=False).delete()
             new_photo = Photo(name=photo.name, is_marked=True)
             new_photo.save()
         else:
-            Photo.objects.filter(name=photo.name,is_marked=True).delete()
             new_photo = Photo(name=photo.name, is_marked=False)
             new_photo.save()
     photos = Photo.objects.filter(is_marked=True)
-    print("dnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"+str(photos.count()))
     return render(request, 'galery_project/photos_choices.html', {'photos':photos})
 
