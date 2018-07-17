@@ -40,7 +40,7 @@ Click on the buttom Search and:
 
 So Send your new Photo. In te next page you can see your new photo: 
 
-![All](https://github.com/IreneGinani/Galeria/raw/master/documentation/fotosselecionadas.png)
+![All](https://github.com/IreneGinani/Galeria/raw/master/documentation/paginainici-sm.png)
 
 So choice your photo click on it and it stay like: 
 
@@ -48,5 +48,5 @@ So choice your photo click on it and it stay like:
 
 Click on buttom and see in next page all choices photos.
 
-![photos](https://github.com/IreneGinani/Galeria/raw/master/documentation/paginainici-sm.png)
+![photos](https://github.com/IreneGinani/Galeria/raw/master/documentation/fotosselecionadas.png)
 
