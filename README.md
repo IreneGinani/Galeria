@@ -46,3 +46,7 @@ So choice your photo click on it and it stay like:
 
 ![Choices](https://github.com/IreneGinani/Galeria/raw/master/documentation/fotoselecionadasf.png)
 
+Click on buttom and see in next page all choices photos.
+
+![photos](https://github.com/IreneGinani/Galeria/raw/master/documentation/paginainici-sm.png)
+
