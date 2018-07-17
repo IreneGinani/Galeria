@@ -33,3 +33,7 @@ http://localhost:8000/
 In first window you have to choice a photo, like this:
 
 ![Initial](https://github.com/IreneGinani/Galeria/raw/master/documentation/telainicio-sm.png)
+
+Click on the buttom Search and: 
+
+![Search](https://github.com/IreneGinani/Galeria/raw/master/documentation/escolha-foto-sf.png)
