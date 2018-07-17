@@ -37,3 +37,8 @@ In first window you have to choice a photo, like this:
 Click on the buttom Search and: 
 
 ![Search](https://github.com/IreneGinani/Galeria/raw/master/documentation/escolha-foto-sf.png)
+
+So Send your new Photo. In te next page you can see your new photo like: 
+
+![Search](https://github.com/IreneGinani/Galeria/raw/master/documentation/fotosselecionadasf.png)
+
